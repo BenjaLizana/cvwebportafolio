@@ -22,6 +22,11 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { PerfilComponent } from './perfil/perfil.component';
 import { FormularioContactoComponent } from './formulario-contacto/formulario-contacto.component';
+import { HabilidadesComponent } from './habilidades/habilidades.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { PersonalInformationComponent } from './personal-information/personal-information.component';
 
 
 @NgModule({
@@ -32,6 +37,8 @@ import { FormularioContactoComponent } from './formulario-contacto/formulario-co
     ContactoComponent,
     PerfilComponent,
     FormularioContactoComponent,
+    HabilidadesComponent,
+    PersonalInformationComponent,
 
   ],
   imports: [
@@ -50,7 +57,10 @@ import { FormularioContactoComponent } from './formulario-contacto/formulario-co
     MatInputModule,
     ReactiveFormsModule,
     MatSelectModule,
-    MatRadioModule
+    MatRadioModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

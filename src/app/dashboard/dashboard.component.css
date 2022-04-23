@@ -17,5 +17,8 @@
 }
 
 .dashboard-card-content {
-  text-align: center;
+  text-align: left;
+}
+.img-card-content {
+  text-align: right;
 }
