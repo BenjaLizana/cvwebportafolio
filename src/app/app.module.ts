@@ -21,6 +21,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { PerfilComponent } from './perfil/perfil.component';
+import { FormularioContactoComponent } from './formulario-contacto/formulario-contacto.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { PerfilComponent } from './perfil/perfil.component';
     DashboardComponent,
     ContactoComponent,
     PerfilComponent,
+    FormularioContactoComponent,
 
   ],
   imports: [
