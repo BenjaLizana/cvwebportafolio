@@ -17,6 +17,10 @@ import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 @NgModule({
@@ -24,6 +28,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppComponent,
     SidebarComponent,
     DashboardComponent,
+    ContactoComponent,
+    PerfilComponent,
 
   ],
   imports: [
@@ -40,7 +46,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatCardModule,
     MatMenuModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
