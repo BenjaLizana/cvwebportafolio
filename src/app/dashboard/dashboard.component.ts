@@ -15,18 +15,18 @@ export class DashboardComponent {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Sobre mí', cols: 3, rows: 1 },
+          { title: 'Sobre mí', cols: 2, rows: 1 },
           { title: 'Información Personal', cols: 1, rows: 1 },
-          { title: 'Card 3', cols: 1, rows: 1 },
-          { title: 'Card 4', cols: 1, rows: 1 }
+          { title: 'Experiencia Profesional', cols: 1, rows: 1 },
+          // { title: 'Card 4', cols: 1, rows: 1 }
         ];
       }
 
       return [
-        { title: 'Sobre mí', cols: 3, rows: 1 },
+        { title: 'Sobre mí', cols: 2, rows: 1 },
         { title: 'Información Personal', cols: 1, rows: 1 },
-        { title: 'Card 3', cols: 1, rows: 1 },
-        { title: 'Card 4', cols: 1, rows: 1 }
+        { title: 'Experiencia Profesional', cols: 1, rows: 1 },
+        // { title: 'Card 4', cols: 1, rows: 1 }
       ];
     })
   );

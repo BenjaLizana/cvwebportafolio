@@ -27,6 +27,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
+import { ProfesionalExperienceComponent } from './profesional-experience/profesional-experience.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { PersonalInformationComponent } from './personal-information/personal-in
     FormularioContactoComponent,
     HabilidadesComponent,
     PersonalInformationComponent,
+    ProfesionalExperienceComponent,
 
   ],
   imports: [
