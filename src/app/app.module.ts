@@ -28,6 +28,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { PersonalInformationComponent } from './personal-information/personal-information.component';
 import { ProfesionalExperienceComponent } from './profesional-experience/profesional-experience.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatMomentDateModule, MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter';
+
+
 
 
 @NgModule({
@@ -62,9 +66,13 @@ import { ProfesionalExperienceComponent } from './profesional-experience/profesi
     MatRadioModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatDatepickerModule,
+    MatMomentDateModule
   ],
-  providers: [],
+  providers: [
+    { provide: MAT_MOMENT_DATE_ADAPTER_OPTIONS, useValue: { useUtc: true } }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

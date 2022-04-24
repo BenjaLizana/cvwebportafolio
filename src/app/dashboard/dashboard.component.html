@@ -1,6 +1,6 @@
 <div class="grid-container">
   <h1 class="mat-h1">Presentación</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
+  <mat-grid-list cols="2" rowHeight="330px">
     <mat-grid-tile
       *ngFor="let card of cards | async"
       [colspan]="card.cols"
@@ -44,17 +44,18 @@
         </mat-card-content>
         <mat-card-content
           *ngIf="
-            card.cols == 1 &&
+            (card.cols == 1 || card.cols == 2) &&
             card.rows == 1 &&
             card.title == 'Información Personal'
           "
           class="dashboard-card-content"
+          rowHeight="350px"
         >
           <app-personal-information></app-personal-information>
         </mat-card-content>
         <mat-card-content
           *ngIf="
-            card.cols == 1 &&
+            (card.cols == 1 || card.cols == 2) &&
             card.rows == 1 &&
             card.title == 'Experiencia Profesional'
           "

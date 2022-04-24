@@ -7,20 +7,41 @@
       <div class="row">
         <div class="col">
           <mat-form-field class="full-width">
-            <input matInput placeholder="Company" formControlName="company">
+            <input matInput placeholder="Nombre de la Empresa" formControlName="empresa" [readonly]="true">
           </mat-form-field>
         </div>
       </div>
       <div class="row">
         <div class="col">
           <mat-form-field class="full-width">
-            <input matInput placeholder="First name" formControlName="firstName">
+            <input matInput placeholder="Cargo Ocupado" formControlName="cargo" [readonly]="true">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width" color="primary">
+            <mat-label>Fecha de Ingreso</mat-label>
+            <input matInput [matDatepicker]="picker2" formControlName="fechaIngreso">
+            <mat-hint>DD/MM/AAAA</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker2" disabled=""></mat-datepicker-toggle>
+            <mat-datepicker #picker2 color="primary"></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="full-width" color="primary">
+            <mat-label>Fecha de Término</mat-label>
+            <input matInput placeholder="Sin Fecha de Término" [matDatepicker]="picker3" formControlName="fechaTermino" [readonly]="true">
+            <mat-hint>DD/MM/AAAA</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker3" disabled=""></mat-datepicker-toggle>
+            <mat-datepicker #picker3 color="primary"></mat-datepicker>
           </mat-form-field>
         </div>
       </div>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" type="submit">Submit</button>
+      <button mat-raised-button color="primary" type="submit">Ver Tecnologías</button>
+      <button mat-raised-button color="warn" type="submit">Ver Tareas</button>
     </mat-card-actions>
   <!-- </mat-card> -->
 </form>

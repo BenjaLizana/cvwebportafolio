@@ -3,36 +3,57 @@
     <mat-card-header>
       <mat-card-title>Shipping Information</mat-card-title>
     </mat-card-header> -->
-    <mat-card-content>
-      <div class="row">
-        <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Correo electrónico" formControlName="correo" [readonly]="true">
-          </mat-form-field>
-        </div>
+  <mat-card-content>
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="full-width">
+          <input
+            matInput
+            placeholder="Correo electrónico"
+            formControlName="correo"
+            [readonly]="true"
+          />
+        </mat-form-field>
       </div>
-      <div class="row">
-        <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Número Teléfonico" formControlName="number" [readonly]="true">
-          </mat-form-field>
-        </div>
-        <div class="col">
-          <mat-form-field class="full-width">
-            <input matInput placeholder="Ciudad" formControlName="city" [readonly]="true">
-          </mat-form-field>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="full-width">
+          <input
+            style="cursor: pointer"
+            matInput
+            placeholder="LinkedIn"
+            formControlName="linkedIn"
+            [readonly]="true"
+          />
+        </mat-form-field>
       </div>
-      <div class="row">
-        <div class="col">
-          <mat-form-field class="full-width">
-            <input style="cursor: pointer;" matInput placeholder="LinkedIn" formControlName="linkedIn" [readonly]="true">
-          </mat-form-field>
-        </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <mat-form-field class="full-width">
+          <input
+            matInput
+            placeholder="Número Teléfonico"
+            formControlName="number"
+            [readonly]="true"
+          />
+        </mat-form-field>
       </div>
-    </mat-card-content>
-    <mat-card-actions>
-      <button mat-raised-button color="primary" type="submit">Submit</button>
-    </mat-card-actions>
+      <div class="col">
+        <mat-form-field class="full-width">
+          <input
+            matInput
+            placeholder="Ciudad"
+            formControlName="city"
+            [readonly]="true"
+          />
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </mat-card-actions>
   <!-- </mat-card> -->
 </form>
