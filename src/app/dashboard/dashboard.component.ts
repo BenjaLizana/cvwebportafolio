@@ -30,5 +30,6 @@ export class DashboardComponent {
       ];
     })
   );
+
   constructor(private breakpointObserver: BreakpointObserver) { }
 }

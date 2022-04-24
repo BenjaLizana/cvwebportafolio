@@ -30,6 +30,12 @@ import { PersonalInformationComponent } from './personal-information/personal-in
 import { ProfesionalExperienceComponent } from './profesional-experience/profesional-experience.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatMomentDateModule, MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDialogModule } from '@angular/material/dialog';
+import { VerTareasDialogComponent } from './ver-tareas-dialog/ver-tareas-dialog.component';
+import { VerTecnologiasDialogComponent } from './ver-tecnologias-dialog/ver-tecnologias-dialog.component';
+
+
 
 
 
@@ -45,6 +51,8 @@ import { MatMomentDateModule, MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/m
     HabilidadesComponent,
     PersonalInformationComponent,
     ProfesionalExperienceComponent,
+    VerTareasDialogComponent,
+    VerTecnologiasDialogComponent,
 
   ],
   imports: [
@@ -68,7 +76,13 @@ import { MatMomentDateModule, MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/m
     MatPaginatorModule,
     MatSortModule,
     MatDatepickerModule,
-    MatMomentDateModule
+    MatMomentDateModule,
+    MatTabsModule,
+    MatDialogModule
+  ],
+  entryComponents: [
+    VerTareasDialogComponent,
+    VerTecnologiasDialogComponent
   ],
   providers: [
     { provide: MAT_MOMENT_DATE_ADAPTER_OPTIONS, useValue: { useUtc: true } }
